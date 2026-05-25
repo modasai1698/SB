@@ -1,39 +1,22 @@
-ConnectHub-Docker/
-├── docker-compose.yml
-├── .env.example
-├── README.md
-├── backend/
-│   ├── Dockerfile
-│   ├── pom.xml
-│   └── src/
-│       └── main/
-│           ├── java/
-│           │   └── com/
-│           │       └── social/
-│           │           ├── config/
-│           │           │   └── DatabaseConfig.java
-│           │           ├── model/
-│           │           │   ├── User.java
-│           │           │   └── Post.java
-│           │           ├── dao/
-│           │           │   ├── UserDAO.java
-│           │           │   └── PostDAO.java
-│           │           └── servlet/
-│           │               ├── LoginServlet.java
-│           │               ├── RegisterServlet.java
-│           │               ├── FeedServlet.java
-│           │               └── LogoutServlet.java
-│           └── webapp/
-│               ├── WEB-INF/
-│               │   └── web.xml
-│               ├── index.jsp
-│               ├── register.jsp
-│               └── feed.jsp
-├── database/
-│   ├── Dockerfile
-│   ├── init.sql
-│   └── my.cnf
-└── nginx/
-    ├── Dockerfile
-    ├── nginx.conf
-    └── default.conf
+# ConnectHub - Social Media Platform
+
+A Facebook-like social media website built with Java, JSP, Servlets, and MySQL.
+
+## Features
+- User Registration & Login
+- Create Posts
+- View Newsfeed
+- Responsive Design
+
+## Quick Start with Docker
+
+### Prerequisites
+- Docker & Docker Compose installed
+- Git
+
+### Installation
+
+1. Clone or extract this project
+2. Copy `.env.example` to `.env` and update passwords:
+   ```bash
+   cp .env.example .env
